@@ -1,0 +1,125 @@
+/* General Styling */
+body {
+    font-family: "Poppins", sans-serif; 
+    background: linear-gradient(to bottom, #eac0c0, #f5d5d5);
+    
+}
+
+/* Full Page Centering */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8); /* Light glass effect */
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 90%;
+    gap: 20px;
+}
+
+/* Login Box (Left Side) */
+.login-box {
+    flex: 1;
+    padding: 40px;
+    background: linear-gradient(to bottom, #582323, #f37083);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.welcome-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.sub-text {
+    font-size: 16px;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.google-login {
+    background: none;
+    border: 2px solid #fff;
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.google-login:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.input-field {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background: #502f4c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-button:hover {
+    background: #3a1e34;
+}
+
+.signup-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.signup-text a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+/* Right Side: Image Section */
+.login-image {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.login-image img {
+    max-width: 90%;
+    border-radius: 10px;
+    display: flex;
+}
