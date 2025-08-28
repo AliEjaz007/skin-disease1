@@ -1,0 +1,200 @@
+/* ========== Base Styles ========== */
+.otp-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* ========== Background Container ========== */
+  .otp-container {
+    background-color: #e29191;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* ========== OTP Box ========== */
+  .otp-box {
+    background: linear-gradient(to bottom, #593737, #ffd8e4);
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  /* ========== Header ========== */
+  .otp-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .otp-header h2 {
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .otp-header p {
+    color: #070707;
+    font-size: 14px;
+  }
+  
+  /* ========== Image ========== */
+  .otp-image-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  
+  .otp-image {
+    width: 140px;
+    height: 140px;
+  }
+  
+  /* ========== Form ========== */
+  .otp-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .otp-form label {
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .otp-inputs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .otp-inputs input {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    transition: all 0.3s;
+  }
+  
+  .otp-inputs input:focus {
+    outline: none;
+    border-color: #7e2f2f;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ========== Buttons ========== */
+  .resend-btn {
+    background-color: #7e2f2f;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .resend-btn:hover:not(.disabled) {
+    background-color: #a04545;
+    transform: translateY(-3px);
+  }
+  
+  .resend-btn.disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .otp-actions {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .confirm-btn, .cancel-btn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .confirm-btn {
+    background-color: #7e2f2f;
+    color: white;
+    border: none;
+  }
+  
+  .confirm-btn:hover:not(:disabled) {
+    background-color: #a04545;
+    transform: translateY(-3px);
+  }
+  
+  .confirm-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .cancel-btn {
+    background-color: transparent;
+    color: #7e2f2f;
+    border: 2px solid #7e2f2f;
+  }
+  
+  .cancel-btn:hover {
+    background-color: rgba(126, 47, 47, 0.1);
+    transform: translateY(-3px);
+  }
+  
+  /* ========== Animation ========== */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* ========== Responsive ========== */
+  @media (max-width: 600px) {
+    .otp-box {
+      padding: 30px 20px;
+    }
+    
+    .otp-inputs input {
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+    }
+    
+    .otp-actions {
+      flex-direction: column;
+    }
+    
+    .confirm-btn, .cancel-btn {
+      width: 100%;
+    }
+  }

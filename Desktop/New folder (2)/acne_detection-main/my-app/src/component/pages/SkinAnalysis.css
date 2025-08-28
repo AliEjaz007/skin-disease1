@@ -1,0 +1,162 @@
+/* Unified Styles for All Boxes */
+.lower-section {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.diet-plans h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.diet-plans h2:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #4ecdc4;
+  margin: 15px auto 0;
+}
+
+.diet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.diet-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+  text-align: center;
+}
+
+.diet-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* For Remedies Boxes */
+.remedy-box {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+  text-align: center;
+}
+
+.remedy-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* For Analysis Boxes */
+.analysis-box {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+  text-align: center;
+}
+
+.analysis-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Common Content Styles */
+.diet-card h3,
+.remedy-box h3,
+.analysis-box h3 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.diet-card p,
+.remedy-box p,
+.analysis-box p {
+  color: #6c757d;
+  line-height: 1.7;
+  margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .diet-plans h2 {
+    font-size: 1.8rem;
+  }
+  
+  .diet-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .diet-card,
+  .remedy-box,
+  .analysis-box {
+    padding: 1.5rem;
+  }
+}
+/* Analysis Results Specific Styles */
+.results-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.results-list li {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  color: #4a5568;
+}
+
+.icon {
+  color: #4ecdc4;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+/* Maintains consistency with other sections */
+.diet-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.diet-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.diet-card h3 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f0f0f0;
+  text-align: center;
+}
+
+.card-content {
+  padding: 0 1rem;
+}

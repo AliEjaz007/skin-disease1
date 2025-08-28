@@ -1,0 +1,33 @@
+.image-view-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.image-view-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.image-view-img {
+  max-width: 80%;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.image-view-button {
+  margin-top: 25px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.image-view-button:hover {
+  background-color: #0056b3;
+}

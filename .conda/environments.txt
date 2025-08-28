@@ -1,0 +1,3 @@
+D:\conda
+D:\conda\envs\streamlit_env
+D:\conda\envs\streamlit-env

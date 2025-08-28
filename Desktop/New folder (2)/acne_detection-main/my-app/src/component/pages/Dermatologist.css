@@ -1,0 +1,183 @@
+/* Location Cards */
+.location-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  
+  .clinic-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .clinic-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .doctor-avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e9ecef;
+    margin: 0 auto 0.5rem;
+  }
+  
+  .rating, .specialty {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+  }
+  
+  .clinic-details {
+    margin-bottom: 1.5rem;
+  }
+  
+  .address, .distance, .hours, .clinic-name {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+    color: #4a5568;
+  }
+  
+  .clinic-name {
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .clinic-actions {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: auto;
+    padding-top: 1rem;
+  }
+  
+  .action-button {
+    flex: 1;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+  
+  .action-button.primary {
+    background: #4ecdc4;
+    color: white;
+  }
+  
+  .action-button.primary:hover {
+    background: #3aa89f;
+  }
+  
+  .action-button.call {
+    background: #f0f4f8;
+    color: #2c3e50;
+  }
+  
+  .action-button.map {
+    background: #ebf8ff;
+    color: #3182ce;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .clinic-actions {
+      flex-direction: column;
+    }
+    
+    .action-button {
+      width: 100%;
+    }
+  }
+
+
+
+
+  .map-section-container {
+    padding: 120px;
+    background-color: #f9f9f9;
+    max-height: 100vh;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .map-section {
+    height: 600px;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-content h4 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.popup-content p {
+  margin: 0;
+  color: #555;
+}
+
+.location-details-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.location-details-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.location-details-content h3 {
+  color: #2a4365;
+  margin-bottom: 15px;
+}
+
+.location-details-content p {
+  margin-bottom: 8px;
+  color: #4a5568;
+}
+
+.close-details-button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #2a4365;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.close-details-button:hover {
+  background-color: #1a365d;
+}
